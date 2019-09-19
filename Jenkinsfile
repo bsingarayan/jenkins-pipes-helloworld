@@ -22,6 +22,7 @@ node {
       sh "pwd"
       sh "ls -l ~/"
       sh "groovy -version"
+      sh "uname -ai"
     }
   } finally {
     stage('cleanup') {
