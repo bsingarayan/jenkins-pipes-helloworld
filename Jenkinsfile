@@ -18,6 +18,11 @@ node {
     stage('publish') {
       echo "uploading package..."
     }
+    stage('Add some information') {
+      sh "pwd"
+      sh "ls -l ~/"
+      sh "groovy -version"
+    }
   } finally {
     stage('cleanup') {
       echo "doing some cleanup..."
